@@ -1,0 +1,45 @@
+<div class="card">
+    <div class="card-header">
+       Rutinas
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-primary">
+                <thead>
+                    <tr>
+                        <th >ID</th>
+                        <th >Lunes</th>
+                        <th >Martes</th>
+                        <th >Miercoles</th>
+                        <th >Jueves</th>
+                        <th >viernes</th>
+                        <th >Sabado</th>
+                        <th >Domingo</th>
+                        <th >Opcion</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr *ngFor="let rutina of Rutinas; let iControl=index">
+                        <td> {{rutina.ID}} </td>
+                        <td> {{rutina.Lunes}} </td>
+                        <td> {{rutina.Martes}} </td>
+                        <td> {{rutina.Miercoles}} </td>
+                        <td> {{rutina.Jueves}} </td>
+                        <td> {{rutina.Viernes}} </td>
+                        <td> {{rutina.Sabado}} </td>
+                        <td> {{rutina.Domingo}} </td>
+                        <td>
+                            <a class="btn btn-primary" routerLink="/editar-rutina/{{rutina.ID}} ">Editar</a> |
+
+                            <a class="btn btn-danger" (click)="eliminarRutina(rutina.ID,iControl)" role="button">Eliminar</a>
+                        </td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    
+</div>

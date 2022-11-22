@@ -1,0 +1,58 @@
+<div class="card">
+  <div class="card-header">
+    Diseña tu Rutina
+  </div>
+  <div class="card-body">
+
+    <form [formGroup]="formularioDePersona" (ngSubmit)="enviarDatos()">
+
+      <div class="mb-3">
+        <label for="" class="form-label">Lunes:</label>
+        <input type="text" class="form-control" name="" formControlName="lunes" id="" aria-describedby="helpId"
+          placeholder="Empiesa a diseñar tu rutina de este Lunes">
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Martes:</label>
+        <input type="text" class="form-control" name="" formControlName="martes" id="" aria-describedby="helpId"
+          placeholder="Empiesa a diseñar tu rutina de este Martes">
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Miercoles:</label>
+        <input type="text" class="form-control" name="" formControlName="miercoles" id="" aria-describedby="helpId"
+          placeholder="Empiesa a diseñar tu rutina de este Miercoles">
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Jueves:</label>
+        <input type="text" class="form-control" name="" formControlName="jueves" id="" aria-describedby="helpId"
+          placeholder="Empiesa a diseñar tu rutina de este Jueves">
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Viernes:</label>
+        <input type="text" class="form-control" name="" formControlName="viernes" id="" aria-describedby="helpId"
+          placeholder="Empiesa a diseñar tu rutina de este Viernes">
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Sabado:</label>
+        <input type="text" class="form-control" name="" formControlName="sabado" id="" aria-describedby="helpId"
+          placeholder="Empiesa a diseñar tu rutina de este Sabado">
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Domingo:</label>
+        <input type="text" class="form-control" name="" formControlName="domingo" id="" aria-describedby="helpId"
+          placeholder="Empiesa a diseñar tu rutina de este Domingo">
+      </div>
+    
+    <div class="btn-group" role="group" aria-label="">
+      <button type="submit" class="btn btn-primary">Agregar</button>
+      <button type="button" class="btn btn-danger">Canselar</button>
+    </div>
+  </form>
+  </div>
+
+</div>

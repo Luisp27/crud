@@ -1,0 +1,58 @@
+<div class="card">
+  <div class="card-header">
+    Edita tu Rutina
+  </div>
+  <div class="card-body">
+
+    <form [formGroup]="formularioDePersona" (ngSubmit)="enviarDatos()">
+
+      <div class="mb-3">
+        <label for="" class="form-label">Lunes:</label>
+        <input formControlName="lunes" type="text" class="form-control" name="" id="lunes" aria-describedby="helpId"
+          placeholder="Edita tu rutina de este Lunes">
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Martes:</label>
+        <input formControlName="martes" type="text" class="form-control" name="" id="martes" aria-describedby="helpId"
+          placeholder="Edita tu rutina de este Martes">
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Miercoles:</label>
+        <input formControlName="miercoles" type="text" class="form-control" name="" id="miercoles" aria-describedby="helpId"
+          placeholder="Edita tu rutina de este Miercoles">
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Jueves:</label>
+        <input formControlName="jueves" type="text" class="form-control" name="" id="" aria-describedby="helpId"
+          placeholder="Edita tu rutina de este Jueves">
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Viernes:</label>
+        <input formControlName="viernes" type="text" class="form-control" name="" id="" aria-describedby="helpId"
+          placeholder="Edita tu rutina de este Viernes">
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Sabado:</label>
+        <input formControlName="sabado" type="text" class="form-control" name="" id="" aria-describedby="helpId"
+          placeholder="Edita tu rutina de este Sabado">
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Domingo:</label>
+        <input formControlName="domingo" type="text" class="form-control" name="" id="" aria-describedby="helpId"
+          placeholder="Edita tu rutina de este Domingo">
+      </div>
+
+      <div class="btn-group" role="group" aria-label="">
+        <button type="submit" class="btn btn-primary">Agregar</button>
+        <button type="button" class="btn btn-danger">Canselar</button>
+      </div>
+
+    </form>
+  </div>
+
+</div>
